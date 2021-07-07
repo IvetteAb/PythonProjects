@@ -10,8 +10,8 @@ print(number_of_exams)
 total_credits = int(input("Enter how many credits these exams cover: "))
 
 # add up % for each exam using 'for' loops
-# python will start off w/ 0, but when you add exams & credits it'll adjust i.e. add up % from each exam
-# some ppl use 'i' as it's general - here we used 'exam'
+# python will start off with 0, but when you add exams & credits it'll adjust i.e. add up % from each exam
+# some ppl use 'i' as it's general - here we used 'exam' (L17)
 # this is looped from L18 & L19, so it'll keep adding onto the previous average then it'll print your av
 average = 0
 for exam in range(number_of_exams):
