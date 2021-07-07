@@ -16,22 +16,22 @@ while True:         # loop requires a colon
     if player == "end the game":
         print("The game has ended.")
         break                           # breaks the while True
-    elif player == computer:        # tie
+    elif player == computer:            # tie
         print("Tie!")
     elif player == "rock":          # outcomes for rock
         if computer == "paper":     # use paper, as paper beats rock
             print("You lose!", computer, "beats", "player")     # i.e. paper beats player, who played rock
         else:
-            print("You win!", player, "beats", computer)       # i.e. player played scissors
+            print("You win!", player, "beats", computer)        # i.e. player played scissors
     elif player == "paper":             # outcomes for paper
         if computer == "scissors":      # use scissors, as scissors beats paper
             print("You lose!", computer, "beats", "player")  # i.e. scissors beats player, who played paper
         else:
-            print("You win!", player, "beats", computer)    # i.e. player played rock
+            print("You win!", player, "beats", computer)     # i.e. player played rock
     elif player == "scissors":             # outcomes for scissors
-        if computer == "rock":      # use rock, as rock beats scissors
+        if computer == "rock":             # use rock, as rock beats scissors
             print("You lose!", computer, "beats", "player")     # i.e. rock beats player, who played scissors
         else:
-            print("You win!", player, "beats", computer)    # i.e. player played paper
+            print("You win!", player, "beats", computer)        # i.e. player played paper
     else:
-         print("Check your spelling ...")   # in case there are typos
+         print("Check your spelling ...")   # in case there are any typos
