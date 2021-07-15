@@ -5,18 +5,23 @@ import matplotlib.pyplot as plt         # named the package plt
 
 # create a very basic plot - we'll want something better
 # create a random list
-# x = [1, 3, 5, 10]   # this is what we're plotting
-# plt.plot(x)         # this won't work because you need to say --> plt.show()
-# plt.show()          # v basic, no axis or labels, press red stop button to stop running the graph
-#
-# # plotting x & y against each other
-# # both lists need to have the same no of entries
-# y = [7, 12, 21, 22]
-# plt.plot(x, y)      # +ive correlation as x increases, y increases
-# plt.show()
+x = [1, 3, 5, 10]   # this is what we're plotting
+plt.plot(x)         # this won't work because you need to say --> plt.show()
+plt.show()          # v basic, no axis or labels, press red stop button to stop running the graph
+
+# plotting x & y against each other
+# both lists need to have the same no of entries
+y = [7, 12, 21, 22]
+plt.plot(x, y)      # +ive correlation as x increases, y increases
+plt.show()
+
+
 
 
 # build a better plot
+
+# import the relevant modules
+import matplotlib.pyplot as plt         # named the package plt
 
 # line 1 - points
 x = [3, 9, 14]
@@ -45,7 +50,12 @@ plt.legend()
 plt.show()
 
 
+
+
 # other styles to add on a graph
+
+# import the relevant modules
+import matplotlib.pyplot as plt         # named the package plt
 
 # line 1
 a = [3, 9, 14]
@@ -75,3 +85,27 @@ plt.legend()        # show the legend (i.e. key) on the plot
 plt.show()
 
 
+
+
+# Create a graph with two lines
+
+import matplotlib.pyplot as plt
+
+# line 1 points
+x = [12, 23, 32, 46, 54, 71, 98]
+y = [17, 28, 35, 52, 69, 99, 74]
+plt.plot(x, y, c="purple", linewidth=2, label="Line 1", marker='s', markerfacecolor="yellow",
+         markersize=6)
+
+# line 2 points
+x2 = [19, 26, 34, 49, 58, 67, 86]
+y2 = [22, 38, 43, 59, 64, 71, 92]
+plt.plot(x2, y2, c="orange", linewidth=2, label="Line 2", linestyle="dashed",
+         marker='o', markerfacecolor="black", markersize=6)
+
+plt.xlabel("X-axis")         # label the axis & title
+plt.ylabel("Y-axis")
+plt.title("A Random Graph")
+
+plt.legend()        # show the legend (i.e. key) on the plot
+plt.show()
